@@ -1,0 +1,1 @@
+v.resize(distance(v.begin(), unique(all(v))));

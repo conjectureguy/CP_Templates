@@ -1,0 +1,13 @@
+{
+  "cmd":["bash", "-c", "g++ -Wall -Wextra -pedantic -std=c++17 -DONPC -O2 -Wshadow -Wformat=2 -Wfloat-equal -Wconversion -Wlogical-op -Wshift-overflow=2 -Wduplicated-cond -Wcast-qual -Wcast-align -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_FORTIFY_SOURCE=2 -fsanitize=address -fsanitize=undefined -fno-sanitize-recover -fstack-protector '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"],
+  "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+  "working_dir": "${file_path}",
+  "selector": "source.c, source.c++",
+  "variants":
+  [
+    {
+      "name": "Run_20",
+      "cmd": ["bash", "-c", "g++ -std=c++20 -DONPC -Wall '${file}' -o '${file_path}/${file_base_name}' && '${file_path}/${file_base_name}'"]
+    }
+  ]
+}

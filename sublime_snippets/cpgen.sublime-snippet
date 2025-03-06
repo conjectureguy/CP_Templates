@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+const char gap = ' ';
+#define endl "\n"
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+ll rnd(ll a, ll b){
+	return a + rng()%(b-a+1);
+}
+
+int main(int argc, char const *argv[])
+{
+	srand(atoi(argv[1]));
+	$0
+	return 0;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cpgen</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+unsigned long long modInverse(unsigned long long n, int p)
+{
+  return power(n, p - 2, p);
+}
+
+]]></content>
+  <tabTrigger>modinv</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

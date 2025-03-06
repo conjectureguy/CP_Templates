@@ -1,0 +1,1 @@
+ll urand(ll a, ll b) {return uniform_int_distribution<ll>(a, b)(rng);}

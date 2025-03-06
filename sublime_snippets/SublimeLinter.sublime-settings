@@ -1,0 +1,6 @@
+"linters":
+{
+    "gcc": {
+        "args": "-Wall -fsyntax-only -fno-caret-diagnostics -std=c++20"
+    }
+},

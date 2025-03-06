@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+void dfs(ll s, vector<vector<ll>> &adj, vector<bool> &vis){
+  if (vis[s])
+  {
+    return;
+  }
+  vis[s] = true;
+  for(auto u: adj[s]){
+    dfs(u, adj, vis);
+  }
+}
+]]></content>
+  <tabTrigger>dfs</tabTrigger>
+  <!-- <description></description> -->
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

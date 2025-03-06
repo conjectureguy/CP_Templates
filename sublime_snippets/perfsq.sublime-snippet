@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+bool isPerfectSquare(ll x)
+{
+    ll s = round(sqrt(x));
+    return (s * s == x);
+}
+]]></content>
+  <tabTrigger>perfsq</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

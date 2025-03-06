@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+int ispalindrome(string s)
+{
+  ll i = 0;
+  ll n = s.length();
+  while (i <= n)
+  {
+    if (s[i++] != s[--n])
+      return 0;
+  }
+  return 1;
+}
+
+]]></content>
+  <tabTrigger>ispalindrome</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

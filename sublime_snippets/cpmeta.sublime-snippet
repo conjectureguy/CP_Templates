@@ -1,0 +1,70 @@
+<snippet>
+  <content><![CDATA[
+#include<bits/stdc++.h>
+
+#include<ext/pb_ds/assoc_container.hpp>
+#include<ext/pb_ds/tree_policy.hpp>
+
+#define pb push_back
+#define ff first
+#define ss second
+#define endl '\n'
+#define all(a) (a).begin(), (a).end()
+#define vi vector<int>
+#define vll vector<ll>
+#define vpll vector<pair<ll,ll>>
+#define sz(c) ll((c).size())
+constexpr long long INF = 1e18;
+constexpr long long MOD = 1000000007;
+
+using namespace std;
+using namespace __gnu_pbds;
+
+typedef long long ll;
+typedef long double ld;
+typedef unsigned long long ull;
+
+template<class T> using pqg = priority_queue<T, vector<T>, greater<T>>;
+
+mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+
+typedef tree<ll, null_type, less<ll>, rb_tree_tag, tree_order_statistics_node_update> ordered_set; // find_by_order, order_of_key
+
+#ifndef ONPC
+#define debug(...) 42
+#else
+#include "/home/rahul/Desktop/Personal/Coding/CP/debug.h"
+#endif
+
+/*-----------  END -----------*/
+
+void solve(int ts = 1)
+{
+  $0
+}
+
+int main()
+{
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr); cout.tie(nullptr);
+  
+  #ifdef ONPC
+    freopen("/home/rahul/Desktop/Personal/Coding/CP/input.in", "r", stdin);
+    freopen("/home/rahul/Desktop/Personal/Coding/CP/output.out", "w", stdout);
+    freopen("/home/rahul/Desktop/Personal/Coding/CP/error.out", "w", stderr);
+  #endif
+
+  int ts;
+  ts=1;
+  cin>>ts;
+  for(int i = 1; i <= ts; i++){
+    cout << "Case #" << i << ": ";
+    solve(i);
+  }
+}
+]]></content>
+  <tabTrigger>cpm</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>

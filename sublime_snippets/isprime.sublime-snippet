@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+bool is_prime(ll n)
+{
+  for (ll i = 2; i * i <= n; i++)
+  {
+    if (n % i == 0)
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
+]]></content>
+  <tabTrigger>isprime</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
