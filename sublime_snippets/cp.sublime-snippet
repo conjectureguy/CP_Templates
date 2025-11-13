@@ -56,7 +56,7 @@ int main()
 
   int ts;
   ts=1;
-  cin>>ts;
+  //cin>>ts;
   for(int i = 1; i <= ts; i++){
     solve(i);
   }
